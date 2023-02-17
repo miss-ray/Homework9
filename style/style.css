@@ -1,0 +1,419 @@
+/*================Reset style start=================*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*================Reset style finish=================*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: Philosopher;
+  scroll-behavior: smooth;
+  color: var(--font-color1);
+}
+:root {
+  --font-color1: #fff;
+  --font-color2: #ff9900;
+  --font-color3: #000;
+  --border-color: #ffe600;
+  --backgraund-color: #f6fdee;
+}
+.main-block {
+  margin: 0 auto;
+}
+.vintage {
+  display: flex;
+  background-image: url(../image/banner1.png);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 142px;
+  background-repeat: no-repeat;
+  height: 1080px;
+  background-size: cover;
+  align-items: start;
+  justify-content: center;
+  background-position: center;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr auto 2fr;
+  grid-column-gap: 8vw;
+  align-self: center;
+}
+.menu a {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--font-color1);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 1fr;
+  grid-gap: 15px;
+  padding: 8px 0;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--font-color1);
+  text-decoration: none;
+  text-align: center;
+}
+.logo span {
+  color: var(--font-color2);
+}
+.menu a:hover {
+  color: var(--font-color2);
+}
+.main-btn {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--font-color2);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  width: fit-content;
+  margin-left: auto;
+  padding: 3px 10px;
+}
+.main-btn:hover {
+  color: var(--font-color1);
+  border-color: var(--font-color2);
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-column-gap: 10vw;
+  align-self: center;
+  margin-top: 320px;
+}
+h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 9rem;
+  text-align: right;
+}
+h1 span {
+  color: var(--font-color2);
+}
+.main-grid p {
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+  text-align: left;
+}
+.main-grid p span {
+  color: var(--font-color2);
+  text-align: right;
+  padding: 10px 0 0px 410px;
+}
+.our-story {
+  display: flex;
+  background: var(--backgraund-color);
+  padding: 120px 141px;
+  align-items: start;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--font-color3);
+  margin-bottom: 70px;
+}
+h2 span {
+  color: var(--font-color2);
+}
+.our-story-grid {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 2.5fr 2.5fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 1.2vw;
+}
+.our-story-grid > div {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--font-color3);
+  line-height: 2rem;
+}
+.photo1 {
+  background-image: url(../image/vintage1.png);
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-size: cover;
+}
+.photo2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  image-size: cover;
+}
+.image-grid {
+  width: 100%;
+}
+h3 {
+  color: var(--font-color2);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.photo2 h3,
+p {
+  text-align: center;
+}
+.our-story-grid p {
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+.photo2 .image-grid {
+  height: 84%;
+}
+.photo3 {
+  background-image: url(../image/vintage3.png);
+  background-repeat: no-repeat;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-size: cover;
+}
+.photo4 p {
+  text-align: left;
+}
+.photo5 p {
+  text-align: left;
+}
+.second-btn {
+  display: flex;
+  margin-left: auto;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--font-color3);
+  background: none;
+  border: none;
+  border-bottom: 7px solid var(--border-color);
+  padding: 0;
+  margin-top: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.second-btn:hover {
+  color: var(--border-color);
+  border-bottom: none;
+  border-bottom: 7px solid transparent;
+}
+.our-collection {
+  display: flex;
+  position: relative;
+  background: var(--font-color1);
+  padding: 120px 0;
+}
+.line {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: var(--font-color2);
+}
+.top {
+  top: 266px;
+}
+.bottom {
+  bottom: 229px;
+}
+.our-collection-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 3fr;
+  grid-column-gap: 2vw;
+}
+.travel1 {
+  background-image: url(../image/MaskGroup1.png);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  padding: 297px 37px 70px 20px;
+}
+.city-btn {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--font-color1);
+  background: none;
+  border: none;
+  border-bottom: 7px solid var(--border-color);
+  padding: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.our-collection-grid p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--font-color1);
+  line-height: 2rem;
+  text-align: left;
+}
+.travel2 {
+  background-image: url(../image/MaskGroup2.png);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  padding: 297px 37px 70px 20px;
+}
+.travel3 {
+  background-image: url(../image/MaskGroup3.png);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  padding: 297px 37px 70px 20px;
+}
+.travel4 {
+  background-image: url(../image/MaskGroup4.png);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  padding: 297px 37px 70px 20px;
+}
