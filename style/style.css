@@ -571,3 +571,15 @@ p {
   grid-column-start: 21;
   grid-column-end: 25;
 }
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1.5fr;
+  grid-column-gap: 7vw;
+}
+.column1 {
+  display: grid;
+  grid-row-gap: 3vw;
+}
+.award-grid {
+  width: 100%;
+}
